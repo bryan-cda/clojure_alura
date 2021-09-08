@@ -8,8 +8,6 @@
       (recur (inc i) (next rest-persons))
       i)))
 
-
-
 (defn extract
   [releases]
 
@@ -24,9 +22,8 @@
   )
 
 
-
+(println (account ["Bryan", "Irys", "Ellora", "Megan", "Vaquinha"]))
 
 (println (account ["daniela" "guilherme" "carlos" "paulo" "lucia" "ana"]))
-;(println (extract [1200 1400 500 100 530]))
 
 (println (account []))
