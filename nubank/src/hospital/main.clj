@@ -3,15 +3,14 @@
   (:require [hospital.model.hospital :as m.hospital]
             [hospital.logic.logic :as l.logic]))
 
-
-(def persons '("Bryan" "Irys" "Marco" "Thais"))
-
 (defn start-hospital-operations []
   (def west-dor (m.hospital/new-hospital))
 
   (def west-dor (l.logic/enter-waiting-queue west-dor :password-queue "Raze"))
+  (def west-dor (l.logic/enter-waiting-queue west-dor :password-queue "Sova"))
   (def west-dor (l.logic/enter-waiting-queue west-dor :password-queue "Sage"))
   (def west-dor (l.logic/enter-waiting-queue west-dor :password-queue "Reyna"))
+  (def west-dor (l.logic/enter-waiting-queue west-dor :password-queue "Brimstone"))
   (def west-dor (l.logic/enter-waiting-queue west-dor :urgency "Jetty"))
   (def west-dor (l.logic/enter-waiting-queue west-dor :urgency "Kill Joy"))
   (def west-dor (l.logic/enter-waiting-queue west-dor :urgency "Astra"))
