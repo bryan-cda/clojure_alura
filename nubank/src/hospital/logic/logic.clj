@@ -13,7 +13,7 @@
   [hospital queue person]
     (if (current-queue-have-space? hospital queue)
       (update hospital queue conj person)
-      (throw (ex-info "Full queue" {:try-to-add-new-person person}))))
+      (throw (ex-info "Full queue" {:full-queue person}))))
 
 (defn attend-patient
   [hospital department]

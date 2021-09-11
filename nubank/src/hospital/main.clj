@@ -25,5 +25,19 @@
   (def attended (l.logic/attend-patient west-dor :urgency))
   (pprint attended))
 
+(defn start-hospital-operations-multi-thread []
+  (.start (Thread. (fn [] (println "Thread 1"))))
+  (.start (Thread. (fn [] (println "Thread 2"))))
+  (.start (Thread. (fn [] (println "Thread 3"))))
+  (.start (Thread. (fn [] (println "Thread 4"))))
+  (.start (Thread. (fn [] (println "Thread 5"))))
+  (.start (Thread. (fn [] (println "Thread 6"))))
+  (.start (Thread. (fn [] (println "Thread 7"))))
+  (.start (Thread. (fn [] (println "Thread 8"))))
+  (.start (Thread. (fn [] (println "Thread 9"))))
+  (.start (Thread. (fn [] (println "Thread 10")))))
+
+(start-hospital-operations-multi-thread)
+
 (start-hospital-operations)
 
