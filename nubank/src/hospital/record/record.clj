@@ -4,20 +4,16 @@
 
 (defrecord Agent [user name type])
 
-(pprint(Agent. "madara" "Raze" "Duelist"))
-
-(pprint(->Agent "madara" "Raze" "Duelist"))
-
-
+(pprint (Agent. "Doctor" "Jane" "Surgery"))
 
 (defn unpack-record-as-hashmap []
-    (let [madara (Agent. "madara" "Raze" "Duelist")]
+    (let [madara (Agent. "Doctor" "John" "Dentist")]
           (println (:name madara))
           (println (:user madara))
           (println (:type madara))
           (println (vals madara))
-          (pprint(assoc (Agent. "madara" "Raze" "Dueslist") :user "Madara"))
-          (pprint(class(assoc (Agent. "madara" "Raze" "Dueslist") :user "Madara")))
+          (pprint(assoc (Agent. "Doctor" "Jane" "Surgery") :user "Female Doctor"))
+          (pprint(class(assoc (Agent. "Doctor" "Jane" "Surgery") :user "Female Doctor")))
           (pprint (.user madara))))
 
 (unpack-record-as-hashmap)
