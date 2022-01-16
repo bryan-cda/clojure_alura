@@ -1,7 +1,9 @@
 # Olá, esse é meu repositório Clojure! É aqui que eu pratico e me atualizo nessa interessante linguagem de programação funcional sendo um dos dialetos LISP
 
 <div>
-  <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" style="max-width: 100%;">
+  <a align="right">
+    <img align="center"  height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/clojure/clojure-original.svg" style="max-width: 100%;">
+  </a>
 </div>
 
 
