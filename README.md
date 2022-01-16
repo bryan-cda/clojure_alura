@@ -11,7 +11,7 @@
 
 👨🏽‍💻 projeto nubank [em progresso]: 
 
-Aqui o objetivo é montar uma simulação do app da nubank com serviços financeiros básicos, as transações normais do dia a dia com possibilidade de mais tarde integrar com react e usar o clojurescript
+Aqui o objetivo é construir uma simulação do app da Nubank com serviços financeiros básicos, as transações normais do dia a dia com possibilidade de mais tarde integrar com React e usar o ClojureScript como microserviço independente do projeto.
 
 
 ##
