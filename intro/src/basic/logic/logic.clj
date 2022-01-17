@@ -1,4 +1,4 @@
-(ns hospital.logic.logic
+(ns basic.logic.logic
   (:use (clojure pprint)))
 
 (defn current-queue-have-space?

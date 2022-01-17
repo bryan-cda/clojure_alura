@@ -1,4 +1,4 @@
-(ns hospital.data-structure.data_structures
+(ns basic.data-structure.data_structures
   (:import (clojure.lang PersistentQueue))
   (:use [clojure pprint])
   (:require [hospital.model.hospital :as m.hospital]))

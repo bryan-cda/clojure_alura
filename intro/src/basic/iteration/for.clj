@@ -1,4 +1,4 @@
-(ns nubank.for)
+(ns basic.iteration.for)
 
 (defn account
   [persons]

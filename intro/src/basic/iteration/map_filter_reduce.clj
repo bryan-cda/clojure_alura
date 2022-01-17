@@ -1,4 +1,4 @@
-(ns nubank.map-filter-reduce)
+(ns basic.iteration.map-filter-reduce)
 
 (println "Clojure Function Map, Filter and Reduce")
 

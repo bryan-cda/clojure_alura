@@ -1,4 +1,4 @@
-(ns hospital.main
+(ns basic.main
   (:use [clojure pprint])
   (:require [hospital.model.hospital :as m.hospital]
             [hospital.logic.logic :as l.logic]))

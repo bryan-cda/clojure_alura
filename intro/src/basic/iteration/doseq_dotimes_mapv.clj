@@ -1,4 +1,4 @@
-(ns hospital.iteration.doseq-dotimes-mapv
+(ns basic.iteration.doseq-dotimes-mapv
 (:use [clojure pprint]))
 
 (def times [3 8 9 12 23 29 31 33 37 43 47 51 53 57])

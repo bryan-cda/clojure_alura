@@ -1,4 +1,4 @@
-(ns nubank.maps)
+(ns basic.data_structure.maps)
 
 (def ir-fee-discount {1903.98 0.00
                       2826.65 0.07

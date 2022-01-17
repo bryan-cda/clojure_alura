@@ -1,6 +1,4 @@
-(ns nubank.api)
-
-(ns nubank.api
+(ns api.api
   (:require [io.pedestal.http.route :as route]
             [io.pedestal.http :as http]))
 

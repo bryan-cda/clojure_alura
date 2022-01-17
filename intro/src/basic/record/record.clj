@@ -1,4 +1,4 @@
-(ns hospital.record.record
+(ns basic.record.record
     (:use [clojure pprint])
     (:import (clojure.lang PersistentQueue)))
 

@@ -1,4 +1,4 @@
-(ns hospital.patient.hospital-patient
+(ns basic.patient.hospital-patient
   (:use [clojure pprint]))
 
 ; creating a object types
