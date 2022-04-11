@@ -1,4 +1,4 @@
-(ns basic.schema.schema
+(ns clojure-schemas.schema.schema
   (:use clojure.pprint))
 
 (defn add-patient [patients patient]
