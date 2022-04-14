@@ -1,14 +1,17 @@
-(ns clojure-schemas.schema
+(ns clojure.schema.schema
   (:use clojure.pprint)
   (:require [schema.core :as s
              :include-macros true]))
 
-(defn add-patient [patients patient]
+(s/set-fn-validation! true)
+
+
+(s/defn add-patient [patients patient]
      (if-let [id (:id patient) ]
        (assoc patients id patient)
        (throw (ex-info "Patients don't have id for " {:patient patient}))))
 
-(defn visit-generator [visit-list, patient, visitor]
+(s/defn visit-generator [visit-list patient :- Long, visitor :- [String]]
   (if (contains? visit-list patient)
     (update visit-list patient concat visitor)
     (assoc visit-list patient visitor)))
@@ -37,12 +40,31 @@
 
 (patient-generator)
 
-(s/set-fn-validation! true)
-
+;valid if is number
 (s/defn print-number [n :- Long]
   (pprint n))
 
+
 (print-number 143543435)
+
+;valid if number is positive
+(defn is-positive? [n]
+  (> n 0))
+
+(def TestPositiveNumber (s/pred is-positive? "positive"))
+
+(pprint (s/validate TestPositiveNumber 15))
+
+(println "is positive? " (pos? -1))
+
+(s/def Patient
+  {:id (s/constrained s/Int is-positive?)  :name s/Str})
+
+(pprint (s/validate Patient {:id 145 :name "Cora"}))
+
+;(pprint (s/validate Patient {:id -145 :name "Cora"}))
+
+;(pprint (s/validate TestPositiveNumber -5))
 
 ;(print-number "15")
 
