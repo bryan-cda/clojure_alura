@@ -47,8 +47,8 @@
 
 (print-number 143543435)
 
-;valid if number is positive
-(defn is-positive? [n]
+
+(defn f [n]
   (> n 0))
 
 (def TestPositiveNumber (s/pred is-positive? "positive"))
