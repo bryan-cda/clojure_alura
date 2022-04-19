@@ -5,7 +5,6 @@
 
 (s/set-fn-validation! true)
 
-
 (s/defn add-patient [patients patient]
      (if-let [id (:id patient) ]
        (assoc patients id patient)
@@ -51,14 +50,16 @@
 (defn f [n]
   (> n 0))
 
-(def TestPositiveNumber (s/pred is-positive? "positive"))
+(def TestPositiveNumber (s/pred pos-int? 1))
+
+;(def TestPositiveNumber (s/pred is-positive? "1"))
 
 (pprint (s/validate TestPositiveNumber 15))
 
 (println "is positive? " (pos? -1))
 
 (s/def Patient
-  {:id (s/constrained s/Int is-positive?)  :name s/Str})
+  {:id (s/constrained s/Int pos-int?)  :name s/Str})
 
 (pprint (s/validate Patient {:id 145 :name "Cora"}))
 
