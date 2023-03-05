@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DataAnalysisApplication.iml" filepath="$PROJECT_DIR$/DataAnalysisApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clojure-data-analysis.iml" filepath="$PROJECT_DIR$/clojure-data-analysis.iml" />
     </modules>
   </component>
 </project>
