@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeiningenProjectsManager">
+    <option name="projectFiles">
+      <set>
+        <option value="file://$PROJECT_DIR$/Schemas/project.clj" />
+        <option value="file://$PROJECT_DIR$/Tests/project.clj" />
+        <option value="file://$PROJECT_DIR$/meetapp/project.clj" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

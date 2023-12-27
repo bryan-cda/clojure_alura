@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Clojure.iml" filepath="$PROJECT_DIR$/.idea/Clojure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Schemas/clojure-schemas.iml" filepath="$PROJECT_DIR$/Schemas/clojure-schemas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meetapp/nubank.iml" filepath="$PROJECT_DIR$/meetapp/nubank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tests/tests.iml" filepath="$PROJECT_DIR$/Tests/tests.iml" />
+    </modules>
+  </component>
+</project>
